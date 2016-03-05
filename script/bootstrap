@@ -6,7 +6,7 @@ function bootstrap {
 
   local url_scala='http://downloads.lightbend.com/scala/2.11.7/scala-2.11.7.tgz'
 
-  cache curl "scala-2.11.7.tgz" "$url_scala" -sS -L
+  cache curl "scala-2.11.7.tgz" "$url_scala"
   mkdir -p "$shome/vendor"
   (cd "$shome/vendor" && tar xvfz "${BASEBOX_CACHE}/curl/scala-2.11.7.tgz")
   ln -nfs scala-2.11.7 "$shome/vendor/scala"
