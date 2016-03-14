@@ -3,7 +3,7 @@
 function profile {
   local shome="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
   export SCALA_HOME="$shome/vendor/scala"
-  PATH="$shome/bin:$shome/exec:$SCALA_HOME/bin:$PATH"
+  PATH="$shome/bin:$SCALA_HOME/bin:$PATH"
 }
 
 profile
